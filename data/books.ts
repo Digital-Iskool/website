@@ -198,9 +198,9 @@ export const studyGuides: Guide[] = [
     class: 8,
     subject: 'Bangla',
     medium: 'bangla',
-    content: 'This comprehensive guide will help you understand Bangla grammar fundamentals...',
-    contentBn: 'এই বিস্তৃত গাইড আপনাকে বাংলা ব্যাকরণের মূল বিষয়গুলি বুঝতে সাহায্য করবে...',
-    contentAr: 'سيساعدك هذا الدليل الشامل على فهم أساسيات قواعد اللغة البنغالية...'
+    content: 'This comprehensive guide will help you understand Bangla grammar fundamentals including nouns, pronouns, verbs, adjectives, and sentence structure. Regular practice and reading quality literature will significantly improve your grammar skills.',
+    contentBn: 'এই বিস্তৃত গাইড আপনাকে বাংলা ব্যাকরণের মূল বিষয়গুলি বুঝতে সাহায্য করবে যেমন বিশেষ্য, সর্বনাম, ক্রিয়া, বিশেষণ এবং বাক্য গঠন। নিয়মিত অনুশীলন এবং মানসম্পন্ন সাহিত্য পড়া আপনার ব্যাকরণ দক্ষতা উল্লেখযোগ্যভাবে উন্নত করবে।',
+    contentAr: 'سيساعدك هذا الدليل الشامل على فهم أساسيات قواعد اللغة البنغالية بما في ذلك الأسماء والضمائر والأفعال والصفات وبنية الجملة.'
   },
   {
     id: 'guide2',
@@ -210,11 +210,60 @@ export const studyGuides: Guide[] = [
     class: 10,
     subject: 'Mathematics',
     medium: 'bangla',
-    content: 'Essential tips and tricks to excel in SSC Mathematics examination...',
-    contentBn: 'এসএসসি গণিত পরীক্ষায় সফল হওয়ার জন্য প্রয়োজনীয় টিপস...',
-    contentAr: 'نصائح وحيل أساسية للتفوق في امتحان الرياضيات SSC...'
+    content: 'Essential tips and tricks to excel in SSC Mathematics examination. Focus on algebra, geometry, trigonometry and calculus. Practice previous years questions and solve at least 5 problems daily. Time management is crucial during exams.',
+    contentBn: 'এসএসসি গণিত পরীক্ষায় সফল হওয়ার জন্য প্রয়োজনীয় টিপস এবং কৌশল। বীজগণিত, জ্যামিতি, ত্রিকোণমিতি এবং ক্যালকুলাসের উপর মনোনিবেশ করুন। পূর্ববর্তী বছরের প্রশ্ন অনুশীলন করুন এবং প্রতিদিন কমপক্ষে ৫টি সমস্যা সমাধান করুন।',
+    contentAr: 'نصائح وحيل أساسية للتفوق في امتحان الرياضيات SSC. التركيز على الجبر والهندسة وحساب المثلثات والتفاضل والتكامل.'
+  },
+  {
+    id: 'guide3',
+    title: 'Science Study Guide for Class 9',
+    titleBn: 'নবম শ্রেণির জন্য বিজ্ঞান অধ্যয়ন গাইড',
+    titleAr: 'دليل دراسة العلوم للصف التاسع',
+    class: 9,
+    subject: 'Science',
+    medium: 'bangla',
+    content: 'A comprehensive guide covering Physics, Chemistry, and Biology for Class 9. Understand core concepts through diagrams and experiments. Create mind maps for better retention and practice numerical problems regularly.',
+    contentBn: 'নবম শ্রেণির জন্য পদার্থবিজ্ঞান, রসায়ন এবং জীববিজ্ঞান কভার করে একটি বিস্তৃত গাইড। চিত্র এবং পরীক্ষার মাধ্যমে মূল ধারণাগুলি বুঝুন। ভাল স্মরণের জন্য মাইন্ড ম্যাপ তৈরি করুন।',
+    contentAr: 'دليل شامل يغطي الفيزياء والكيمياء والأحياء للصف التاسع. فهم المفاهيم الأساسية من خلال الرسوم البيانية والتجارب.'
+  },
+  {
+    id: 'guide4',
+    title: 'English Writing Skills',
+    titleBn: 'ইংরেজি লেখার দক্ষতা',
+    titleAr: 'مهارات الكتابة الإنجليزية',
+    class: 7,
+    subject: 'English',
+    medium: 'bangla',
+    content: 'Improve your English writing skills with proper grammar, vocabulary, and sentence formation. Practice essay writing, letter writing, and comprehension regularly. Read English newspapers and books to enhance vocabulary.',
+    contentBn: 'সঠিক ব্যাকরণ, শব্দভাণ্ডার এবং বাক্য গঠনের মাধ্যমে আপনার ইংরেজি লেখার দক্ষতা উন্নত করুন। নিবন্ধ লেখা, চিঠি লেখা এবং বোঝার অনুশীলন নিয়মিত করুন।',
+    contentAr: 'تحسين مهارات الكتابة باللغة الإنجليزية مع القواعد الصحيحة والمفردات وتكوين الجمل.'
+  },
+  {
+    id: 'guide5',
+    title: 'Effective Study Techniques',
+    titleBn: 'কার্যকর পড়াশোনার কৌশল',
+    titleAr: 'تقنيات الدراسة الفعالة',
+    class: 6,
+    subject: 'General',
+    medium: 'bangla',
+    content: 'Learn effective study techniques including the Pomodoro technique, active recall, spaced repetition, and note-taking methods. Create a study schedule and maintain consistency. Take short breaks and stay hydrated.',
+    contentBn: 'কার্যকর পড়াশোনার কৌশল শিখুন যেমন পোমোডোরো কৌশল, সক্রিয় পুনর্বিবেচনা, ব্যবধান পুনরাবৃত্তি এবং নোট নেওয়ার পদ্ধতি। একটি অধ্যয়ন সময়সূচী তৈরি করুন এবং ধারাবাহিকতা বজায় রাখুন।',
+    contentAr: 'تعلم تقنيات الدراسة الفعالة بما في ذلك تقنية بومودورو والاستدعاء النشط والتكرار المتباعد وطرق تدوين الملاحظات.'
+  },
+  {
+    id: 'guide6',
+    title: 'Quran Memorization Tips',
+    titleBn: 'কুরআন মুখস্থ করার টিপস',
+    titleAr: 'نصائح لحفظ القرآن',
+    class: 8,
+    subject: 'Quran',
+    medium: 'madrasa',
+    content: 'Practical tips for memorizing the Holy Quran effectively. Start with shorter surahs, practice with proper Tajweed, revise regularly, and maintain a consistent schedule. Seek guidance from qualified teachers.',
+    contentBn: 'পবিত্র কুরআন কার্যকরভাবে মুখস্থ করার জন্য ব্যবহারিক টিপস। ছোট সূরা দিয়ে শুরু করুন, সঠিক তাজবীদ সহ অনুশীলন করুন, নিয়মিত পুনর্বিবেচনা করুন এবং একটি ধারাবাহিক সময়সূচী বজায় রাখুন।',
+    contentAr: 'نصائح عملية لحفظ القرآن الكريم بشكل فعال. ابدأ بالسور الأقصر، تدرب مع التجويد الصحيح، راجع بانتظام، وحافظ على جدول زمني ثابت.'
   },
 ];
+
 
 // Sample exam papers
 export const examPapers: Exam[] = [

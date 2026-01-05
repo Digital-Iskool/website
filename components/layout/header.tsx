@@ -49,6 +49,9 @@ export function Header({ language, onLanguageChange }: HeaderProps) {
               <MessageSquare className="h-4 w-4 mr-1" />
               {t.nav.aiTutor}
             </Link>
+            <Link href="/help" className="hover:opacity-80 transition text-sm font-medium">
+              Help
+            </Link>
           </nav>
 
           {/* Actions */}
@@ -119,6 +122,13 @@ export function Header({ language, onLanguageChange }: HeaderProps) {
               onClick={() => setMobileMenuOpen(false)}
             >
               {t.nav.aiTutor}
+            </Link>
+            <Link
+              href="/help"
+              className="block px-4 py-2 hover:bg-primary-foreground/10 rounded"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Help
             </Link>
           </nav>
         )}
