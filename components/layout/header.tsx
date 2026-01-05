@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Menu, X, GraduationCap, MessageSquare } from 'lucide-react';
 import { Language } from '@/types';
 import { translations } from '@/lib/translations';
+import { ThemeToggle } from './theme-toggle';
 
 interface HeaderProps {
   language: Language;
@@ -18,44 +19,45 @@ export function Header({ language, onLanguageChange }: HeaderProps) {
   const isRTL = language === 'ar';
 
   return (
-    <header className={`bg-blue-600 text-white shadow-lg ${isRTL ? 'rtl' : ''}`}>
+    <header className={`bg-primary text-primary-foreground shadow-lg sticky top-0 z-50 ${isRTL ? 'rtl' : ''}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition">
             <GraduationCap className="h-8 w-8" />
-            <span className="text-xl font-bold">{t.home.title}</span>
+            <span className="text-xl font-bold hidden sm:inline">{t.home.title}</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/" className="hover:text-blue-200 transition">
+          <nav className="hidden lg:flex items-center space-x-6">
+            <Link href="/" className="hover:opacity-80 transition text-sm font-medium">
               {t.nav.home}
             </Link>
-            <Link href="/books" className="hover:text-blue-200 transition">
+            <Link href="/books" className="hover:opacity-80 transition text-sm font-medium">
               {t.nav.books}
             </Link>
-            <Link href="/guides" className="hover:text-blue-200 transition">
+            <Link href="/guides" className="hover:opacity-80 transition text-sm font-medium">
               {t.nav.guides}
             </Link>
-            <Link href="/practice" className="hover:text-blue-200 transition">
+            <Link href="/practice" className="hover:opacity-80 transition text-sm font-medium">
               {t.nav.practice}
             </Link>
-            <Link href="/exams" className="hover:text-blue-200 transition">
+            <Link href="/exams" className="hover:opacity-80 transition text-sm font-medium">
               {t.nav.exams}
             </Link>
-            <Link href="/ai-tutor" className="hover:text-blue-200 transition flex items-center">
+            <Link href="/ai-tutor" className="hover:opacity-80 transition flex items-center text-sm font-medium">
               <MessageSquare className="h-4 w-4 mr-1" />
               {t.nav.aiTutor}
             </Link>
           </nav>
 
-          {/* Language Selector */}
+          {/* Actions */}
           <div className="flex items-center space-x-2">
+            <ThemeToggle />
             <select
               value={language}
               onChange={(e) => onLanguageChange(e.target.value as Language)}
-              className="bg-blue-700 text-white px-3 py-1 rounded-md text-sm border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
+              className="bg-primary-foreground/10 text-primary-foreground px-3 py-1 rounded-md text-sm border border-primary-foreground/20 focus:outline-none focus:ring-2 focus:ring-primary-foreground/30"
             >
               <option value="en">English</option>
               <option value="bn">বাংলা</option>
@@ -65,7 +67,8 @@ export function Header({ language, onLanguageChange }: HeaderProps) {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-md hover:bg-blue-700"
+              className="lg:hidden p-2 rounded-md hover:bg-primary-foreground/10"
+              aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -74,45 +77,45 @@ export function Header({ language, onLanguageChange }: HeaderProps) {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden py-4 space-y-2">
+          <nav className="lg:hidden py-4 space-y-2 border-t border-primary-foreground/20">
             <Link
               href="/"
-              className="block px-4 py-2 hover:bg-blue-700 rounded"
+              className="block px-4 py-2 hover:bg-primary-foreground/10 rounded"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t.nav.home}
             </Link>
             <Link
               href="/books"
-              className="block px-4 py-2 hover:bg-blue-700 rounded"
+              className="block px-4 py-2 hover:bg-primary-foreground/10 rounded"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t.nav.books}
             </Link>
             <Link
               href="/guides"
-              className="block px-4 py-2 hover:bg-blue-700 rounded"
+              className="block px-4 py-2 hover:bg-primary-foreground/10 rounded"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t.nav.guides}
             </Link>
             <Link
               href="/practice"
-              className="block px-4 py-2 hover:bg-blue-700 rounded"
+              className="block px-4 py-2 hover:bg-primary-foreground/10 rounded"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t.nav.practice}
             </Link>
             <Link
               href="/exams"
-              className="block px-4 py-2 hover:bg-blue-700 rounded"
+              className="block px-4 py-2 hover:bg-primary-foreground/10 rounded"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t.nav.exams}
             </Link>
             <Link
               href="/ai-tutor"
-              className="block px-4 py-2 hover:bg-blue-700 rounded"
+              className="block px-4 py-2 hover:bg-primary-foreground/10 rounded"
               onClick={() => setMobileMenuOpen(false)}
             >
               {t.nav.aiTutor}
