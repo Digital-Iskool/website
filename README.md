@@ -86,6 +86,55 @@ npm run build
 npm start
 ```
 
+## 🚀 Deploy to Vercel
+
+The easiest way to deploy this Next.js app is to use the [Vercel Platform](https://vercel.com/new).
+
+### Quick Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FDigital-Iskool%2Fwebsite)
+
+### Manual Deployment Steps
+
+1. **Install Vercel CLI** (optional):
+   ```bash
+   npm install -g vercel
+   ```
+
+2. **Deploy using Vercel CLI**:
+   ```bash
+   vercel
+   ```
+   Follow the prompts to link your project and deploy.
+
+3. **Deploy via Vercel Dashboard**:
+   - Go to [vercel.com](https://vercel.com)
+   - Click "Add New Project"
+   - Import your GitHub repository
+   - Vercel will automatically detect Next.js and configure settings
+   - Click "Deploy"
+
+### Configuration
+
+The project includes:
+- `vercel.json` - Vercel deployment configuration
+- `.vercelignore` - Files to exclude from deployment
+- Automatic Next.js detection and optimization
+
+### Environment Variables
+
+If you need to add environment variables:
+1. Go to your Vercel project settings
+2. Navigate to "Environment Variables"
+3. Add your variables for Production, Preview, and Development
+
+### Custom Domain
+
+After deployment, you can add a custom domain:
+1. Go to your project in Vercel Dashboard
+2. Navigate to "Settings" → "Domains"
+3. Add your custom domain and follow DNS configuration instructions
+
 ## 📁 Project Structure
 
 ```
