@@ -2,7 +2,13 @@
 
 A comprehensive full-stack educational platform designed for students in Bangladesh (Class 0-12), providing access to NCTB books, study resources, and AI-powered learning assistance.
 
-![Digital Iskool Homepage](https://github.com/user-attachments/assets/120449c8-8f67-4561-98fa-d9bd0fabdbb9)
+## 🌐 Live Demo
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Digital-Iskool/website)
+
+🚀 **Live Demo:** [Coming Soon - Deploy to Vercel to see it in action!]
+
+> Once deployed, the demo link will be added here to showcase the platform.
 
 ## 🎯 Features
 
@@ -13,15 +19,11 @@ A comprehensive full-stack educational platform designed for students in Banglad
   - **English Medium** - English version curriculum  
   - **Madrasa** - Islamic education curriculum with Quran, Arabic, Hadith, and Fiqh
 
-![Books Page](https://github.com/user-attachments/assets/c26143ab-3759-4d78-8c58-601ac48f6bc1)
-
 ### 🤖 AI Teacher Chatbot
 - 24/7 AI-powered teaching assistant
 - Instant help with homework and concepts
 - Context-aware educational responses
 - Multi-language support
-
-![AI Teacher](https://github.com/user-attachments/assets/93de7d6a-14d9-4cb9-bb66-71340ea5717b)
 
 ### 📖 Study Resources
 - **Study Guides** - Comprehensive guides for better understanding
@@ -34,8 +36,6 @@ A comprehensive full-stack educational platform designed for students in Banglad
 - **বাংলা (Bengali)** - Complete Bengali translation
 - **العربية (Arabic)** - Arabic support for Madrasa students
 - RTL (Right-to-Left) layout support for Arabic
-
-![Bengali Version](https://github.com/user-attachments/assets/58acc8f4-39b8-4d32-9df2-f2695d43f6cb)
 
 ## 🛠️ Technology Stack
 
@@ -78,6 +78,22 @@ npm run dev
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### Deploy to Vercel
+
+The easiest way to deploy this Next.js application is using the [Vercel Platform](https://vercel.com):
+
+1. **Quick Deploy**: Click the "Deploy with Vercel" button at the top of this README
+
+2. **Manual Deploy**:
+   - Sign up/login to [Vercel](https://vercel.com)
+   - Import your GitHub repository
+   - Vercel will automatically detect Next.js and configure the build settings
+   - Click "Deploy" and your site will be live in minutes!
+
+3. **Configuration**: No additional configuration needed - Next.js settings are automatically detected
+
+For more details, check the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
 
 ### Build for Production
 
@@ -194,6 +210,16 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - NCTB (National Curriculum and Textbook Board) for the curriculum
 - All educators and students who inspired this project
 - Open source community for the amazing tools
+
+## 📸 Screenshots
+
+> Screenshots and demo videos will be added here after the Vercel deployment is live. This will showcase:
+> - Homepage and navigation
+> - NCTB Books library interface
+> - AI Teacher chatbot in action
+> - Multi-language support
+> - Study guides and practice modules
+> - Responsive design on different devices
 
 ---
 
