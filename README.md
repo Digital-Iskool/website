@@ -6,7 +6,7 @@ A comprehensive full-stack educational platform designed for students in Banglad
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Digital-Iskool/website)
 
-🚀 **Live Demo:** [Coming Soon - Deploy to Vercel to see it in action!]
+🚀 **Live Demo:** Coming Soon - Deploy to Vercel to see it in action!
 
 > Once deployed, the demo link will be added here to showcase the platform.
 
@@ -213,13 +213,15 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📸 Screenshots
 
-> Screenshots and demo videos will be added here after the Vercel deployment is live. This will showcase:
-> - Homepage and navigation
-> - NCTB Books library interface
-> - AI Teacher chatbot in action
-> - Multi-language support
-> - Study guides and practice modules
-> - Responsive design on different devices
+**TODO:** Screenshots and demo videos will be added here after the Vercel deployment is live.
+
+This section will showcase:
+- Homepage and navigation
+- NCTB Books library interface
+- AI Teacher chatbot in action
+- Multi-language support
+- Study guides and practice modules
+- Responsive design on different devices
 
 ---
 
