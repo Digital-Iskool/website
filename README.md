@@ -40,7 +40,7 @@ A comprehensive full-stack educational platform designed for students in Banglad
 ## 🛠️ Technology Stack
 
 ### Frontend
-- **Next.js 14** - React framework with App Router
+- **Next.js 15** - React framework with App Router (React 19)
 - **TypeScript** - Type-safe development
 - **Tailwind CSS** - Utility-first CSS framework
 - **Lucide React** - Beautiful icon library
@@ -56,7 +56,7 @@ A comprehensive full-stack educational platform designed for students in Banglad
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+- Node.js 20.9+
 - npm or yarn
 
 ### Installation

@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { GraduationCap, Mail, MapPin, Phone } from 'lucide-react';
 import { Language } from '@/types';
 import { translations } from '@/lib/translations';
@@ -32,29 +33,29 @@ export function Footer({ language }: FooterProps) {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="/" className="hover:text-foreground transition">
+                <Link href="/" className="hover:text-foreground transition">
                   {t.nav.home}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/books" className="hover:text-foreground transition">
+                <Link href="/books" className="hover:text-foreground transition">
                   {t.nav.books}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/guides" className="hover:text-foreground transition">
+                <Link href="/guides" className="hover:text-foreground transition">
                   {t.nav.guides}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/practice" className="hover:text-foreground transition">
+                <Link href="/practice" className="hover:text-foreground transition">
                   {t.nav.practice}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/ai-tutor" className="hover:text-foreground transition">
+                <Link href="/ai-tutor" className="hover:text-foreground transition">
                   {t.nav.aiTutor}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
