@@ -76,9 +76,9 @@ export default function Home() {
     <div className={`min-h-screen flex flex-col ${isRTL ? 'rtl' : ''}`}>
       <Header language={language} onLanguageChange={setLanguage} />
       
-      <main className="flex-grow">
+      <main className="grow">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+        <section className="bg-linear-to-r/srgb from-blue-600 to-purple-600 text-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <GraduationCap className="h-20 w-20 mx-auto mb-6" />

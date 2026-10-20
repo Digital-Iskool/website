@@ -12,7 +12,7 @@ export function BookNotFound() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header language={language} onLanguageChange={setLanguage} />
-      <main className="flex-grow container mx-auto px-4 py-8">
+      <main className="grow container mx-auto px-4 py-8">
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Book Not Found</h1>
           <p className="text-muted-foreground">The requested book could not be found.</p>

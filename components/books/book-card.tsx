@@ -38,7 +38,7 @@ export function BookCard({ book, language }: BookCardProps) {
   return (
     <Card className={`hover:shadow-lg transition-shadow ${isRTL ? 'rtl' : ''}`}>
       <CardHeader>
-        <div className="relative w-full h-48 bg-gradient-to-br from-primary/10 to-primary/20 dark:from-primary/20 dark:to-primary/30 rounded-md flex items-center justify-center">
+        <div className="relative w-full h-48 bg-linear-to-br/srgb from-primary/10 to-primary/20 dark:from-primary/20 dark:to-primary/30 rounded-md flex items-center justify-center">
           {book.coverImage ? (
             <Image 
               src={book.coverImage} 
@@ -58,7 +58,7 @@ export function BookCard({ book, language }: BookCardProps) {
           <p><strong>Subject:</strong> {getSubject()}</p>
           <p><strong>Medium:</strong> {t.medium[book.medium]}</p>
           {getDescription() && (
-            <p className="text-xs mt-2">{getDescription()}</p>
+            <p className="text-xs">{getDescription()}</p>
           )}
         </div>
       </CardContent>

@@ -107,7 +107,7 @@ export default function HelpPage() {
     <div className="min-h-screen flex flex-col">
       <Header language={language} onLanguageChange={setLanguage} />
       
-      <main className="flex-grow container mx-auto px-4 py-8">
+      <main className="grow container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold mb-8 text-center">
           {language === 'en' ? 'Help Center' : language === 'bn' ? 'সহায়তা কেন্দ্র' : 'مركز المساعدة'}
         </h1>

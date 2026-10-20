@@ -143,7 +143,7 @@ export function BookReader({ book }: BookReaderProps) {
     <div className="min-h-screen flex flex-col">
       <Header language={language} onLanguageChange={setLanguage} />
 
-      <main className="flex-grow">
+      <main className="grow">
         {/* Reading Tools */}
         <div className="border-b bg-card sticky top-16 z-40">
           <div className="container mx-auto px-4 py-3">
