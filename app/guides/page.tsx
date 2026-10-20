@@ -38,7 +38,7 @@ export default function GuidesPage() {
     <div className={`min-h-screen flex flex-col ${isRTL ? 'rtl' : ''}`}>
       <Header language={language} onLanguageChange={setLanguage} />
       
-      <main className="flex-grow container mx-auto px-4 py-8">
+      <main className="grow container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold mb-8">{t.home.features.guides}</h1>
 
         {/* Filters */}
@@ -51,7 +51,7 @@ export default function GuidesPage() {
               <select
                 value={selectedMedium}
                 onChange={(e) => setSelectedMedium(e.target.value as EducationMedium)}
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-500"
               >
                 <option value="bangla">{t.medium.bangla}</option>
                 <option value="english">{t.medium.english}</option>
@@ -66,7 +66,7 @@ export default function GuidesPage() {
               <select
                 value={selectedClass || ''}
                 onChange={(e) => setSelectedClass(e.target.value ? parseInt(e.target.value) : null)}
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-500"
               >
                 <option value="">All Classes</option>
                 {classes.map(classNum => (

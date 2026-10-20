@@ -19,7 +19,7 @@ export function Footer({ language }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
+            <div className="flex items-center gap-2 mb-4">
               <GraduationCap className="h-6 w-6 text-primary" />
               <h3 className="text-xl font-bold">{t.home.title}</h3>
             </div>
@@ -64,15 +64,15 @@ export function Footer({ language }: FooterProps) {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
                 <span>Dhaka, Bangladesh</span>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
                 <span>info@digitaliskool.bd</span>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
                 <span>+880 1XXX-XXXXXX</span>
               </li>

@@ -16,7 +16,7 @@ export default function AITutorPage() {
     <div className={`min-h-screen flex flex-col ${isRTL ? 'rtl' : ''}`}>
       <Header language={language} onLanguageChange={setLanguage} />
       
-      <main className="flex-grow container mx-auto px-4 py-8">
+      <main className="grow container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-4 text-center">{t.chatbot.title}</h1>
           <p className="text-center text-gray-600 mb-8">

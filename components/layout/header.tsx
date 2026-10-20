@@ -23,13 +23,13 @@ export function Header({ language, onLanguageChange }: HeaderProps) {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition">
+          <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition">
             <GraduationCap className="h-8 w-8" />
             <span className="text-xl font-bold hidden sm:inline">{t.home.title}</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-6">
+          <nav className="hidden lg:flex items-center gap-6">
             <Link href="/" className="hover:opacity-80 transition text-sm font-medium">
               {t.nav.home}
             </Link>
@@ -55,12 +55,12 @@ export function Header({ language, onLanguageChange }: HeaderProps) {
           </nav>
 
           {/* Actions */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center gap-2">
             <ThemeToggle />
             <select
               value={language}
               onChange={(e) => onLanguageChange(e.target.value as Language)}
-              className="bg-primary-foreground/10 text-primary-foreground px-3 py-1 rounded-md text-sm border border-primary-foreground/20 focus:outline-none focus:ring-2 focus:ring-primary-foreground/30"
+              className="bg-primary-foreground/10 text-primary-foreground px-3 py-1 rounded-md text-sm border border-primary-foreground/20 focus:outline-hidden focus:ring-2 focus:ring-primary-foreground/30"
             >
               <option value="en">English</option>
               <option value="bn">বাংলা</option>

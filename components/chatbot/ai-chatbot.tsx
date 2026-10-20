@@ -69,7 +69,7 @@ export function AIChatbot({ language }: AIChatbotProps) {
 
   return (
     <Card className={`w-full max-w-2xl mx-auto ${isRTL ? 'rtl' : ''}`}>
-      <CardHeader className="bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+      <CardHeader className="bg-linear-to-r/srgb from-blue-500 to-purple-500 text-white">
         <CardTitle className="flex items-center">
           <Bot className="h-6 w-6 mr-2" />
           {t.chatbot.title}
@@ -84,12 +84,12 @@ export function AIChatbot({ language }: AIChatbotProps) {
               className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
             >
               <div
-                className={`flex items-start space-x-2 max-w-[80%] ${
-                  message.role === 'user' ? 'flex-row-reverse space-x-reverse' : ''
+                className={`flex items-start gap-2 max-w-[80%] ${
+                  message.role === 'user' ? 'flex-row-reverse' : ''
                 }`}
               >
                 <div
-                  className={`flex-shrink-0 h-8 w-8 rounded-full flex items-center justify-center ${
+                  className={`shrink-0 h-8 w-8 rounded-full flex items-center justify-center ${
                     message.role === 'user' ? 'bg-blue-500' : 'bg-purple-500'
                   }`}
                 >
@@ -114,7 +114,7 @@ export function AIChatbot({ language }: AIChatbotProps) {
           {isLoading && (
             <div className="flex justify-start">
               <div className="bg-gray-100 rounded-lg px-4 py-2">
-                <div className="flex space-x-2">
+                <div className="flex gap-2">
                   <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" />
                   <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }} />
                   <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }} />
@@ -126,14 +126,14 @@ export function AIChatbot({ language }: AIChatbotProps) {
 
         {/* Input */}
         <div className="border-t p-4">
-          <div className="flex space-x-2">
+          <div className="flex gap-2">
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && handleSend()}
               placeholder={t.chatbot.placeholder}
-              className="flex-1 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="flex-1 px-4 py-2 border rounded-md focus:outline-hidden focus:ring-2 focus:ring-blue-500"
               disabled={isLoading}
             />
             <Button onClick={handleSend} disabled={isLoading || !input.trim()}>
