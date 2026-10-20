@@ -1,12 +1,24 @@
 'use client';
 
+// pdf.js needs browser-only globals (DOMMatrix, Worker, canvas), so this module
+// must never be evaluated on the server. Load it through `BookReader`, which
+// imports it with `next/dynamic` and `ssr: false`.
 import { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
+import 'react-pdf/dist/Page/TextLayer.css';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
 import { ChevronLeft, ChevronRight, ZoomIn, ZoomOut, Download, Maximize2 } from 'lucide-react';
 import { Button } from '../ui/button';
 
-// Set up the worker
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+// Serve the worker from our own origin: webpack emits this file as a hashed
+// build asset (pdf.worker.min.<hash>.mjs), so it always matches the
+// pdfjs-dist version react-pdf uses. pdfjs-dist 5 only ships ES-module (.mjs)
+// workers, so the old cdnjs `.js` URL could never load.
+// This must stay in the same module that renders <Document>/<Page>.
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
 
 interface PDFViewerProps {
   file: string;
